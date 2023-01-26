@@ -1,0 +1,176 @@
+/* BRAINLABS ASSIGNMENT -- SUBMITTED BY MOHIT KUMAR */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --black: #000;
+    --white: #fff;
+    --clrOne: #006751;
+    --clrTwo: #b6bf00;
+    --clrThree: #a22b06;
+    --clrFour: #6b9b23;
+    --clrFive: #00000033;
+}
+
+.wrapper {
+    min-height: 100vh;
+    position: relative;
+}
+
+/* Left Container Stylings */
+
+#container-left {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url(./images/contact-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    position: relative;
+}
+
+.container-left-inner {
+    position: absolute;
+    top: 60%;
+    left: 10%;
+}
+
+.text-heading h5 {
+    color: var(--white);
+}
+
+.text-heading h2 {
+    color: var(--white);
+}
+
+.btn-enroll {
+    background: var(--clrTwo);
+    color: var(--white);
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+.btn-enroll:hover {
+    color: var(--white);
+}
+
+/* Right Container Stylings */
+
+#container-right {
+    background-color: var(--clrOne);
+    min-height: 100vh;
+}
+
+.container-right-inner {
+    color: var(--white);
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+label {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.form-control {
+    border-radius: 0 !important;
+}
+
+.form-checkbox {
+    position: relative;
+}
+
+.form-check-input {
+    position: absolute;
+}
+
+.form-check-label {
+    font-weight: 400;
+}
+
+.form-control:focus {
+    color: #212529;
+    font-weight: 500;
+    background-color: #fff;
+    border-color: var(--clrFour) !important;
+    outline: 0;
+    box-shadow: 0 0 0 3px var(--clrFour) !important;
+}
+
+.theme-btn {
+    outline: 0;
+    border: 0;
+    background: var(--clrFour);
+    padding: 12px 25px;
+    color: var(--black);
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1px;
+    /* box-shadow: rgb(99 99 99 / 20%) 0px 2px 8px 0px; */
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+#btn-container {
+    display: flex;
+    justify-content: center;
+}
+
+#first_name:hover {
+    color: var(--clrThree);
+    transition: all 0.3s ease-in-out;
+}
+
+#contact-mail {
+    color: var(--white);
+    text-decoration: none;
+}
+
+#contact-mail:hover {
+    color: var(--clrTwo);
+}
+
+#success-msg {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--clrFive);
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+#success-msg img {
+    margin: 20px auto;
+    width: 120px;
+    height: auto;
+}
+
+#success-msg.show {
+    display: block;
+}
+
+#thank-you-message {
+    display: block;
+    width: 300px;
+    padding: 30px;
+    background-color: var(--clrOne);
+    color: var(--white);
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    border-radius: 20px;
+    margin: 150px auto;
+}
+
+@media screen and (max-width: 992px) {
+    .container-left-inner {
+        top: unset;
+        bottom: 200px !important;
+    }
+}
